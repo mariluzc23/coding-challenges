@@ -1,0 +1,18 @@
+public static String timeConversion(String s) {
+    // Write your code here
+    
+    String time = s.substring(8, 10);
+    String hour = s.substring(0, 2);
+    String minutes = s.substring(3, 5);
+    String seconds = s.substring(6, 8);
+    
+    if(time.equals("PM") && !hour.equals("12")) {
+        int newHour = Integer.parseInt(hour) + 12;
+        hour = Integer.toString(newHour);
+    }
+    if(time.equals("AM") && hour.equals("12")) {
+        hour = "00";
+    }
+    
+    return hour+":"+minutes+":"+seconds;
+    }

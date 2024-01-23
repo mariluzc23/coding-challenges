@@ -9,15 +9,14 @@
 \pard\pardeftab720\partightenfactor0
 
 \f0\fs30 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 public\cf0 \strokec4  \cf2 \strokec2 static\cf0 \strokec4  \cf2 \strokec2 int\cf0 \strokec4  findMedian(List<Integer> arr) \{\cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf0 \cb3     \cf5 \strokec5 // Write your code here\cf0 \cb1 \strokec4 \
+public\cf0  \cf2 static\cf0  \cf2 int\cf0  findMedian(List<Integer> arr) \{\cb1 \
+\cb3     \cf5 // Write your code here\cf0 \cb1 \
 \cb3     \cb1 \
 \cb3     Collections.sort(arr);\cb1 \
-\cb3     \cf2 \strokec2 int\cf0 \strokec4  middle = arr.size()/\cf5 \strokec5 2\cf0 \strokec4 ;\cb1 \
+\cb3     \cf2 int\cf0  middle = arr.size()/\cf5 2\cf0 ;\cb1 \
 \cb3     \cb1 \
 \cb3    \cb1 \
-\cb3     \cf2 \strokec2 return\cf0 \strokec4  arr.get(middle);\cb1 \
+\cb3     \cf2 return\cf0  arr.get(middle);\cb1 \
 \
 \cb3     \}\cb1 \
 }
