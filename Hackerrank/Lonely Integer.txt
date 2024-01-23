@@ -1,0 +1,20 @@
+    public static int lonelyinteger(List<Integer> a) {
+    // Write your code here
+    
+    HashSet<Integer> set = new HashSet<>();
+    
+    for(int digit : a){
+        if(set.contains(digit)){
+            set.remove(digit);
+        } else {
+            set.add(digit);
+        }
+    }
+    int uniqueDigit = 0;
+    for(int num : set){
+        uniqueDigit = num;
+    }
+    
+    return uniqueDigit;
+
+    }

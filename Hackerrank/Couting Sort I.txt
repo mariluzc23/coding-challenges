@@ -1,0 +1,12 @@
+  public static List<Integer> countingSort(List<Integer> arr) {
+    // Write your code here
+    
+    List<Integer> frequency = new ArrayList<>(Collections.nCopies(100, 0));
+    
+    for(int num : arr){
+        frequency.set(num, frequency.get(num)+1);
+    }
+    
+    return frequency;
+
+    }
